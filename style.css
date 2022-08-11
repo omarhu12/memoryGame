@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kings&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +39,7 @@ body {
 div.infoContainer {
   display: flex;
   /* font-size: 50px; */
-  font-family: "Kings", cursive;
+  font-family: "Noto Sans", sans-serif;
   margin: 2% 10%;
   justify-content: space-between;
 }
@@ -60,8 +62,9 @@ button.newGameButton {
   background-color: #ffe59c;
   text-align: center;
   border-radius: 10px;
-  font-family: "Kings", cursive;
+  font-family: "Noto Sans", sans-serif;
   margin: 0.5rem;
+  padding: 1rem 2rem;
   font-size: 2rem;
   border: none;
   transition-delay: 0.15s;
@@ -184,6 +187,7 @@ div.memoryGameBlocks .gameBlock div.face {
     border-radius: 10px;
     font-family: "Kings", cursive;
     margin: 0.5rem;
+    padding: 0.5rem 1rem;
     font-size: 1.2rem;
     border: none;
     transition-delay: 0.15s;
@@ -248,7 +252,7 @@ div.memoryGameBlocks .gameBlock div.face {
 
   div.infoContainer {
     justify-content: space-around;
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
   div.tries {
     display: flex;
