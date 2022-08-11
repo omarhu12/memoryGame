@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Time Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="controlBtns">
+      <button>Start Game</button>
+    </div>
+    <div class="infoContainer">
+      <!-- <div class="clock">
+        <i><img id="clock" src="./icons/icons8-alarm-clock-64.png" alt="" /></i>
+        <p>Wrong Tries</p>
+        <div class="timer">
+          <p><span>00</span>:<span>00</span></p>
+        </div> -->
+      <div class="tries">
+          Wrong Tries: <span>0</span>
+      </div>
+      <!-- <div class="newGameButton">
+        <p></p>
+      </div> -->
+      <button class="newGameButton">New Game</button>
+    </div>
+    <div class="memoryGameBlocks">
+      <div class="gameBlock" data-character="Finn1">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-finn-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="Finn1">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-finn-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock none" data-character="Finn2">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-finn-100-2.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock none" data-character="Finn2">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-finn-100-2.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="jake1">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-jake-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="jake1">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-jake-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock none" data-character="jake2">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-jake-100-2.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock none" data-character="jake2">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-jake-100-2.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="jake3">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-jake-100-3.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="jake3">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-jake-100-3.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock none" data-character="jake4">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-jake-100-4.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock none" data-character="jake4">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-jake-100-4.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="lumpy">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-lumpy-space-princess-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="lumpy">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-lumpy-space-princess-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="marceline">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-marceline-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="marceline">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-marceline-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="princess1">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-princess-bubblegum-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="princess1">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-princess-bubblegum-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock none" data-character="princess2">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-princess-bubblegum-100-2.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock none" data-character="princess2">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-princess-bubblegum-100-2.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="adventure">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-adventure-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="adventure">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-adventure-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="bmo">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-bmo-100.png" alt="" />
+        </div>
+      </div>
+      <div class="gameBlock" data-character="bmo">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./icons/icons8-bmo-100.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
