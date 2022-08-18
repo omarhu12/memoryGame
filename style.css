@@ -192,6 +192,15 @@ div.memoryGameBlocks .gameBlock div.face {
   border-radius: 50%;
 }
 
+div.icon8{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+div.omar{
+  text-align: center;
+}
+
 @media (max-width: 850px) {
   .win.show {
     display: block;
